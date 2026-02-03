@@ -31,17 +31,16 @@ PINT [[https://laravel.com/docs/12.x/pint]](https://laravel.com/docs/12.x/pint])
 #### Development
 
 
-| Package                      | Composer                                                    | URL |
-| ---------------------------- | ----------------------------------------------------------- | --- |
-| [PestPHP](#pestphp) (v4.3.2) | composer require pestphp/pest                               |     |
-|                              | composer require pestphp/pest --dev --with-all-dependencies |     |
-|                              | ./vendor/bin/pest --init                                    |     |
-|                              |                                                             |     |
+| Package                                  | Composer                                              | URL                                                                                  |
+| ---------------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [PestPHP](#pestphp) (v4.3.2)             | composer require pestphp/pest                         | [https://pestphp.com/docs/installation](https://pestphp.com/docs/installation)       |
+| [Browser Testing](#pest-browser-testing) | composer require pestphp/pest-plugin-browser --dev    | [https://pestphp.com/docs/browser-testing](https://pestphp.com/docs/browser-testing) |
+| Architecture Testing                     |                                                       | [https://pestphp.com/docs/arch-testing](https://pestphp.com/docs/arch-testing)       |
+| Strees Testing                           | composer require pestphp/pest-plugin-stressless --dev | [https://pestphp.com/docs/stress-testing](https://pestphp.com/docs/stress-testing)   |
+| Test Coverage                            | ./vendor/bin/pest --coverage                          |                                                                                      |
 
 
 ##### PestPHP
-
-###### Installation
 
 ```bash
 composer remove phpunit/phpunit
@@ -49,8 +48,19 @@ composer require pestphp/pest --dev --with-all-dependencies
 ./vendor/bin/pest --init
 ```
 
-###### Usage
+***Usage***
 
 ```bash
 ./vendor/bin/pest
+
+./vendor/bin/pest --parallel
+./vendor/bin/pest --debug
+```
+
+##### Pest Browser Test
+
+```bash
+composer require pestphp/pest-plugin-browser --dev
+npm install playwright@latest
+npx playwright install
 ```
