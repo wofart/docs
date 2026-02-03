@@ -33,7 +33,7 @@ PINT [[https://laravel.com/docs/12.x/pint]](https://laravel.com/docs/12.x/pint])
 
 | Package                      | Composer                                                    | URL |
 | ---------------------------- | ----------------------------------------------------------- | --- |
-| [PestPHP](#PestPHP) (v4.3.2) | composer require pestphp/pest                               |     |
+| [PestPHP](#pestphp) (v4.3.2) | composer require pestphp/pest                               |     |
 |                              | composer require pestphp/pest --dev --with-all-dependencies |     |
 |                              | ./vendor/bin/pest --init                                    |     |
 |                              |                                                             |     |
@@ -43,7 +43,7 @@ PINT [[https://laravel.com/docs/12.x/pint]](https://laravel.com/docs/12.x/pint])
 
 ###### Installation
 
-```plaintext
+```bash
 composer remove phpunit/phpunit
 composer require pestphp/pest --dev --with-all-dependencies
 ./vendor/bin/pest --init
@@ -51,6 +51,6 @@ composer require pestphp/pest --dev --with-all-dependencies
 
 ###### Usage
 
-```plaintext
+```bash
 ./vendor/bin/pest
 ```
